@@ -6,6 +6,12 @@ The aim of this project is to build an accurate binary classification model that
 
 Each data instance consists of two parts: (1) the tweet itself, and (2) the actual news article (linked from the tweet).
 
+**Rough Project Timeline**
+
+1. Find features and models from below articles
+2. Test features and models to find highest scores
+3. Write project report
+
 **Useful Articles for Features and Models**
 
 - Potthast, M., Köpsel, S., Stein, B., & Hagen, M. (2016, March). Clickbait detection. In European Conference on Information Retrieval (pp. 810-817). Springer International Publishing.
