@@ -2,7 +2,7 @@
 
 Clickbait Tweet Classification
 
-The aim of this project is to build an accurate binary classification model that can discriminate clickbait tweets from legitimate ones with high F- measure and AUC scores.
+The aim of this project is to build an accurate binary classification model that can discriminate clickbait tweets from legitimate ones with high F-measure and AUC scores.
 
 Each data instance consists of two parts: (1) the tweet itself, and (2) the actual news article (linked from the tweet).
 
