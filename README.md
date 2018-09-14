@@ -31,7 +31,7 @@ Clickbait: Aims to exploit the "curiosity gap", providing just enough informatio
 
 - https://en.wikipedia.org/wiki/Clickbait
 
-F1 Score: A measure of a test's accuracy. It considers both the precision p and the recall r of the test to compute the score. p is the number of correct positive results divided by the number of all positive results returned by the classifier, and r is the number of correct positive results divided by the numbsr of all relative samples (all samples that should have been identified as positive).
+F1 Score: A measure of a test's accuracy. It considers both the precision p and the recall r of the test to compute the score. p is the number of correct positive results divided by the number of all positive results returned by the classifier, and r is the number of correct positive results divided by the number of all relative samples (all samples that should have been identified as positive).
 
 - https://en.wikipedia.org/wiki/F1_score
 - http://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html
