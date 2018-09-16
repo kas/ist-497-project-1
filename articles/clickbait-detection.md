@@ -37,3 +37,13 @@
       - Using keywords like "This" in "This news will blow your mind."
   - They use Gianotto's rule set premises as features and as a basline for evaluation
     - http://downworthy.snipe.net/
+  - Evaluation
+    - Randomly split corpus into datasets for training and testing at a 2:1 training-test ratio
+    - To avoid overfitting, they discard all features that have non-trivial weights in less than 1% of the training dataset only
+      - Kept features in Table 2, but many individual features from the bag-of-words feature types were discarded
+    - Compared logistic regression, naive Bayes, and random forest in Weka 3.7 using default parameters
+    - Evaluate performance of all features combined, each feature category on its own, and each individual feature (type) in isolation
+      - Results shown in Table 2
+    - The character n-gram features and the word 1-gram feature appear to contribute most to performance
+      - Character n-grams are known to capture writing style
+    - Sentiment analysis alone appears to be insufficient to detect clickbait, but in feature combinations it does possess some predictive power
