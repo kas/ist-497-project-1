@@ -41,3 +41,5 @@ F1 Score: A measure of a test's accuracy. It considers both the precision p and 
 
 1. Create a `data/` folder in the root of the repository
 2. Paste the files downloaded from the link in the project description into that folder
+
+![](https://raw.githubusercontent.com/kas/ist-497-project-1/master/data.png)
