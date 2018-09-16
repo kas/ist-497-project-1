@@ -1,0 +1,39 @@
+# Potthast, M., Köpsel, S., Stein, B., & Hagen, M. (2016, March). Clickbait detection. In European Conference on Information Retrieval (pp. 810-817). Springer International Publishing.
+
+- 215 features
+  - Three categories
+    - Teaser message
+      - Three categories
+        - Basic text statistics
+          - Bag-of-words features
+          - Twitter-specific
+          - Automatically generated image tags (Imagga tagging service)
+          - Sentiment polarity (Stanford NLP Library)
+          - Readability
+          - Terrier stop word list and Dale-Chall list of easy words
+          - Quantity of contradictions and punctuation use
+          - Length statistics
+        - Dictionary features
+          - Checking if a tweet contains a word from a given dictionary of specific words or phrases
+          - Dictionaries obtained from Gianotto
+            - Common clickbait phrases
+            - Clickbait patterns in the form of regular expressions
+          - All 182 General Inquirer dictionaries
+    - Linked web page
+      - Bag-of-words features
+      - Readability and length of the main content when extracted with Boilerpipe
+    - Meta information
+      - The tweet's sender
+      - Whether media (e.g., an image or a video) has been attached to a tweet
+      - Whether a tweet has been retweeted
+      - Part of day in which the tweet was sent (i.e., morning, afternoon, evening, night)
+- Random forest classifier
+- Takeaways
+  - Clickbaity BuzzFeed articles contain a cardinal number in their title, and 85% of the article titles started with that number
+    - The same titles have strong nouns and adjectives to convey authority and sensationalism
+    - The main articles consistently achieve easy readability according to the Gunning fog index
+  - Phoricity
+    - Discourse deixis
+      - Using keywords like "This" in "This news will blow your mind."
+  - They use Gianotto's rule set premises as features and as a basline for evaluation
+    - http://downworthy.snipe.net/
