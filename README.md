@@ -44,4 +44,30 @@ F1 Score: A measure of a test's accuracy. It considers both the precision p and 
 3. Extract the `.zip` files
 4. (Optional) delete the `.zip` files
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Potential Headlines Fetures:
+
+Word Count
+Number: Count the number of numerals
+Baitword:Count the number of clickbait words
+Slang : Count the number of internet slang
+Punctuation: Count the number of !, ? and ...
+SentDegree: Respectively count 2 sets of degree adverbs expressing very and extremely
+SentPolar:Respectively count words expressing positive evaluation, negative evaluation, positive emotion, and negative emotion.
+Distance:Compute the average distance between governing and dependent words (identified by LTP parser5 )
+Forward Ref: Count words expressing forward-reference, including demonstratives (this,that,...) and personal pronouns (he,she,it,...)
+Examine CSR(Class Sequential rules) 
+to find language patterns of ambiguous headlines and non-ambiguous ones, and then derive features based on the sequential rules.
+
+Potential Body Features:
+
+Informality: We compute the frequencies of two informality indicators, namely internet slang and bait words. Additionally, the length of news bodies is also an input feature. 
+Sentiment: Sentiment feature consists of the frequencies of positive evaluations, negative evaluations, positive emotions, negative emotions and subjective words. 
+InformalGap: We calculate the absolute value of informality difference between headlines and bodies of each piece of news.
+SentiGap: We calculate the absolute value of sentiment difference between headlines and bodies of each piece of news. Specifically, this feature set contains the differences in five frequencies mentioned in Sentiment.
+Similarity: Misleading headlines often contains words that differ from those in news bodies. 
+Recognizing Textual Entailment(RTE): Textual entailment is defined as follows: a text T entails another text H if the meaning of H can be inferred from the meaning of T with common background knowledge.
+
+
 ![](https://raw.githubusercontent.com/kas/ist-497-project-1/master/data.png)
