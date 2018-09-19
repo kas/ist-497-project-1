@@ -1,0 +1,38 @@
+Clickbait Basics:
+-The headlines provide forward referencing cues to generate enough curiosity among the readers such that they become compelled to
+click on the link to ﬁll the knowledge gap.
+
+Goal of this Article:
+-First build a classiﬁer which automatically detects whether a headline is clickbait or not.
+-Then explore ways to block certain clickbaits from appearing in different websites. 
+--93% accurate in detecting and 89% in blocking clickbate
+
+Dataset:
+-Non-clickbait:Extracted the headlines from a corpus of 18,513 Wikinews articles collected by NewsReader
+-Clickbait: For clickbaits, we manually identiﬁed the following domains which publish many clickbait articles: ‘BuzzFeed’, ‘Upworthy’, ‘ViralNova’, ‘Scoopwhoop’, and ‘ViralStories’.
+--Crawled 8,069 web articles from these domains
+
+Comparing Clickbaits and Non-Clickbaits:
+-Non-Clickbaits were shorter when compaired to clickbate.
+-Traditional news headlines typically contain mostly content words referring to speciﬁc persons and locations.
+-The function words are left out for readers to interpret from context.
+-Word Length: Clickbait words were shorter.
+  - Speciﬁcally in this dataset, the average word length of clickbait headlines is found to be 4.5 characters
+  - The average word length of non-clickbait headlines is 6. 
+  
+  
+    POSSIBLE FEATURE:
+    -"they’re, you’re, you’ll, we’d" are prevalent in clickbait headlines.
+    -0.6% of the traditional news headlines contain word shortenings
+    -Nearly 22% of clickbait headlines have such shortened words. 
+
+    -Slang
+    -Punctuation like !!!, ???
+    
+    
+    Their Final Feature Selection:
+    -Sentence Structure
+      -Sent length, word length, ratio of stop words to content words
+    -Word patterns
+      -cardinal numbers, punctuation patterns, and number of contracted words
+    -Known Clickbait language
