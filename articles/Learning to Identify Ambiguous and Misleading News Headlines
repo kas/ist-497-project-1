@@ -1,0 +1,33 @@
+Headlines:
+Extract features
+ catchy headlines, such as “You Won’t Believe”
+ 
+ 
+Head Line Features: 
+
+1.Word Count
+2.Number: Count the number of numerals
+3.Baitword:Count the number of clickbait words
+4.Slang : Count the number of internet slang
+5.Punctuation: Count the number of !, ? and ...
+6.SentDegree: Respectively count 2 sets of degree adverbs expressing very and extremely
+7.SentPolar:Respectively count words expressing positive evaluation, negative evaluation, positive emotion, and negative emotion.
+8.Distance:Compute the average distance between governing and dependent words (identified by LTP parser5 )
+9.Forward Ref: Count words expressing forward-reference, including demonstratives (this,that,...) and personal pronouns (he,she,it,...)
+10.Examine CSR(Class Sequential rules) 
+to find language patterns of ambiguous headlines and non-ambiguous ones, and then derive features based on the sequential rules.
+
+
+Features Extracted from the body:
+
+1. Informality: We compute the frequencies of two informality indicators, namely internet slang and bait words. Additionally, the length of news bodies is also an input feature. 
+2. Sentiment: Sentiment feature consists of the frequencies of positive evaluations, negative evaluations, positive emotions, negative emotions and subjective words. 
+3. InformalGap: We calculate the absolute value of informality difference between headlines and bodies of each piece of news.
+4. SentiGap: We calculate the absolute value of sentiment difference between headlines and bodies of each piece of news. Specifically, this feature set contains the differences in five frequencies mentioned in Sentiment.
+5. Similarity: Misleading headlines often contains words that differ from those in news bodies. 
+6. Recognizing Textual Entailment(RTE): Textual entailment is defined as follows: a text T entails another text H if the meaning of H can be inferred from the meaning of T with common background knowledge.
+
+
+
+Possibly useful?
+-SVM toolkit in SciKitLearn
