@@ -37,12 +37,19 @@ F1 Score: A measure of a test's accuracy. It considers both the precision p and 
 - http://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html
 - https://stackoverflow.com/questions/31421413/how-to-compute-precision-recall-accuracy-and-f1-score-for-the-multiclass-case
 
+Precision: The fraction of relevant instances among the retrieved instances.
+
+- https://en.wikipedia.org/wiki/Precision_and_recall
+
+Recall: The fraction of relevant instances that have been retrieved over the total amount of relevant instances.
+
+- https://en.wikipedia.org/wiki/Precision_and_recall
+
 **How to Run**
 
 1. Create a `data/` folder in the root of the repository
 2. Paste the files downloaded from the link in the project description into that folder
 3. Extract the `.zip` files
 4. (Optional) delete the `.zip` files
-
 
 ![](https://raw.githubusercontent.com/kas/ist-497-project-1/master/data.png)
