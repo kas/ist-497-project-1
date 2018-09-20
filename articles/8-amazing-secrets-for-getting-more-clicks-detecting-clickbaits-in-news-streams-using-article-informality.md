@@ -1,0 +1,30 @@
+# BIYANI, P.; TSIOUTSIOULIKLIS, K.; BLACKMER, J. (2016, Feb) "8 Amazing Secrets for Getting More Clicks": Detecting Clickbaits in News Streams Using Article Informality. AAAI Conference on Artificial Intelligence, North America.
+
+- Novel informality features are the most important for clickbait classification
+- Features
+  - Content
+    - Presence of adjectives, adverbs, quotes, exclamations, use of uppercase letters, questions
+    - Unigrams and bigrams from title and body of a page
+      - Also useful for text classification tasks like subjectivity anlysis and sentiment analysis
+    - For positive and negative words, they used the dictionary created by Hu and Liu (Hu and Liu 2004)
+  - Similarity
+    - Similarity between title and top sentences of the body
+      - Five features corresponding to the similarity between the title and the top one, two, three, four, and five sentences of the body
+        - Used tf-idf encoding to compute the similarity and removed stopwords
+  - Informality
+    - Coleman-Liau score (CLScore)
+    - RIX and LIX indices
+    - Formality measure (fmeasure)
+  - Forward-reference
+    - Demonstratives, third person personal pronouns, definite article, and whether the title starts with an adverb
+  - URL
+    - Frequencies of dash, ampersand, uppercase letters, comma, period, equal-to sign, percentage sign, plus, tilde, underscore, and URL depth (number of forward slashes)
+- Model
+  - Gradient Boosted Decision Trees (GBDT)
+- Feature extraction
+  - Used Information Gain (Yang and Pederson 1996) to rank the features and discarded features with zero information gain
+- Evaluation
+  - Used precision, recall, and F-1 score
+- Feature importance
+  - Informality features are one of the most important features
+  - Number of uppercase words, presence of questionmarks and exclamation marks in headlines (titles), and the length of the title (number of words) are the most important content features
